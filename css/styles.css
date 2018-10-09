@@ -97,6 +97,7 @@ header .profile-image:hover {
 
 .background li {
   line-height: 1.5em;
+  margin-bottom: 15px;
 }
 
 .card {
