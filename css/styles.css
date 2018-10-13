@@ -29,7 +29,6 @@
   font-size: .85em;
   max-width: 300px;
   margin: auto;
-  margin-right: 20px;
   padding: 15px;
   top: -8px;
 }
@@ -67,13 +66,15 @@
 .profile__location {
   background-color: #3f3050;
   color: #f5f5f5;
-  margin-top: 25px;
+}
+
+.profile__name {
+  background-color: #f5f5f5;
+  color: #3f3050;
 }
 
 .profile__tag {
-  background-color: #f5f5f5;
   border-radius: 10px;
-  color: #3f3050;
   display: table;
   margin: 45px auto;
   padding: 10px;
@@ -120,8 +121,10 @@
   padding: 5px 10px 10px 10px;
 }
 
-.nav__menu .profile__name {
-  display: none;
+.nav__menu-name {
+  color: #f5f5f5;
+  display: table;
+  margin-right: 20px;
 }
 
 /* social */
@@ -200,7 +203,7 @@ ul.goals__skills {
   text-align: center;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
 
   /* footer */
   .l-footer {
