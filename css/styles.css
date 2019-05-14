@@ -49,9 +49,11 @@
 
 /* header */
 .l-header {
+  color: #3f3050;
   line-height: 1.5;
   padding-top: 60px;
   text-align: center;
+  -webkit-text-fill-color: transparent;
 }
 
 .l-header .profile__image {
@@ -70,18 +72,13 @@
 .profile__location {
   background-color: #3f3050;
   color: #f5f5f5;
+  -webkit-text-fill-color: #f5f5f5;
 }
 
 .profile__name {
-  color: #3f3050;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  .profile__name {
-    background: -webkit-linear-gradient(145deg, #3f3050, #CD4862, #ff677f, #ffae85, #A4616E, #6b3d42);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+  background: -webkit-linear-gradient(145deg, #3f3050, #CD4862, #ff677f, #ffae85, #A4616E, #6b3d42);
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
 }
 
 .profile__tag {
@@ -265,5 +262,11 @@ ul.goals__skills {
     margin: 0 auto;
     max-width: 1200px;
     padding-top: 50px;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .l-header .profile__image:hover {
+    transform: none;
   }
 }
