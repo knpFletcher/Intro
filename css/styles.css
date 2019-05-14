@@ -264,3 +264,9 @@ ul.goals__skills {
     padding-top: 50px;
   }
 }
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .l-header .profile__image:hover {
+    transform: none;
+  }
+}
